@@ -1,0 +1,72 @@
+# ssh-honeypot.service — systemd unit for running the honeypot on a VPS.
+#
+# Installation:
+#   sudo cp ssh-honeypot.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable ssh-honeypot
+#   sudo systemctl start ssh-honeypot
+#
+# View logs:
+#   sudo journalctl -u ssh-honeypot -f
+#
+# Assumptions:
+#   - Honeypot installed at /opt/ssh-honeypot/
+#   - Running as user 'honeypot' (see setup below)
+#   - Python venv at /opt/ssh-honeypot/.venv/
+#
+# One-time setup on the VPS:
+#   sudo useradd --system --shell /bin/false --home /opt/ssh-honeypot honeypot
+#   sudo mkdir -p /opt/ssh-honeypot
+#   sudo git clone <your-repo> /opt/ssh-honeypot
+#   cd /opt/ssh-honeypot
+#   sudo python3 -m venv .venv
+#   sudo .venv/bin/pip install -e .
+#   sudo chown -R honeypot:honeypot /opt/ssh-honeypot
+
+[Unit]
+Description=SSH Honeypot with live dashboard
+Documentation=https://github.com/YOUR_USERNAME/ssh-honeypot
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=honeypot
+Group=honeypot
+
+WorkingDirectory=/opt/ssh-honeypot
+
+# Use the virtualenv Python
+ExecStart=/opt/ssh-honeypot/.venv/bin/python main.py
+
+# Restart on failure — bots will try to take it down
+Restart=on-failure
+RestartSec=5s
+
+# Environment overrides — edit these for your deployment
+Environment=SSH_PORT=2222
+Environment=DASHBOARD_HOST=127.0.0.1
+Environment=DASHBOARD_PORT=8080
+Environment=SESSION_TIMEOUT=30
+Environment=GEOIP_ENABLED=true
+Environment=LOG_LEVEL=INFO
+Environment=FLASK_SECRET=change-me-before-deploying
+
+# Security hardening for the systemd unit itself
+# (defense in depth — even if the honeypot is compromised)
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/ssh-honeypot/data
+
+# Limit open files (each SSH connection uses file descriptors)
+LimitNOFILE=65536
+
+# Standard output goes to journald
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=ssh-honeypot
+
+[Install]
+WantedBy=multi-user.target

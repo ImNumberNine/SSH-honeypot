@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSH Honeypot — Live Dashboard</title>
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080c10;
+  --surface:#0d1117;
+  --surface2:#161b22;
+  --surface3:#1c2128;
+  --border:#21262d;
+  --border2:#30363d;
+  --text:#e6edf3;
+  --muted:#8b949e;
+  --faint:#6e7681;
+  --green:#3fb950;
+  --red:#f85149;
+  --amber:#e3b341;
+  --blue:#58a6ff;
+  --purple:#bc8cff;
+  --r:6px;
+  --rl:10px;
+}
+
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;
+  font-size:13px;line-height:1.5;min-height:100vh;
+}
+
+.wrap{max-width:1400px;margin:0 auto;padding:1.5rem}
+
+/* ── Header ───────────────────────────────────────────────────────── */
+.header{
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:1rem;
+  margin-bottom:1.5rem;padding-bottom:1rem;
+  border-bottom:1px solid var(--border);
+}
+.header-left{display:flex;align-items:center;gap:12px}
+.logo{
+  width:32px;height:32px;background:var(--red);
+  border-radius:6px;display:flex;align-items:center;
+  justify-content:center;font-size:16px;
+}
+.title{font-size:1rem;font-weight:600}
+.subtitle{font-size:0.72rem;color:var(--muted)}
+.live-badge{
+  display:flex;align-items:center;gap:6px;
+  font-size:0.7rem;color:var(--green);
+  background:#0d2d1e;border:1px solid #1a4731;
+  border-radius:12px;padding:3px 10px;
+}
+.live-dot{
+  width:6px;height:6px;border-radius:50%;background:var(--green);
+  animation:pulse 1.5s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* ── Stat cards ───────────────────────────────────────────────────── */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:10px;margin-bottom:1.25rem;
+}
+.card{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--rl);padding:0.9rem 1.1rem;
+}
+.card-label{font-size:0.65rem;color:var(--muted);text-transform:uppercase;
+  letter-spacing:0.09em;margin-bottom:5px}
+.card-value{font-size:1.5rem;font-weight:700;font-variant-numeric:tabular-nums}
+.card-sub{font-size:0.68rem;color:var(--faint);margin-top:2px}
+.c-red{color:var(--red)}.c-green{color:var(--green)}
+.c-amber{color:var(--amber)}.c-blue{color:var(--blue)}
+.c-purple{color:var(--purple)}
+
+/* ── Map ──────────────────────────────────────────────────────────── */
+.map-panel{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--rl);overflow:hidden;margin-bottom:1.25rem;
+}
+.map-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0.75rem 1rem;border-bottom:1px solid var(--border);
+  background:var(--surface2);
+}
+.map-title{font-size:0.68rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:0.09em;color:var(--muted);}
+.map-legend{display:flex;gap:12px;font-size:0.68rem;color:var(--faint)}
+.legend-dot{
+  display:inline-block;width:8px;height:8px;
+  border-radius:50%;margin-right:4px;vertical-align:middle;
+}
+
+#attack-map{height:340px;width:100%;background:#0a1628}
+
+/* Override Leaflet tiles to dark */
+.leaflet-tile{filter:brightness(0.6) saturate(0.5) hue-rotate(190deg)}
+.leaflet-container{background:#080c10 !important}
+
+/* Custom Leaflet popup dark theme */
+.leaflet-popup-content-wrapper{
+  background:var(--surface2) !important;
+  color:var(--text) !important;
+  border:1px solid var(--border2) !important;
+  border-radius:var(--r) !important;
+  box-shadow:0 4px 20px rgba(0,0,0,0.6) !important;
+  font-family:'SFMono-Regular',Consolas,monospace !important;
+  font-size:12px !important;
+}
+.leaflet-popup-tip{background:var(--surface2) !important}
+.leaflet-popup-close-button{color:var(--muted) !important}
+.popup-ip{color:var(--blue);font-weight:600;font-size:13px}
+.popup-row{display:flex;gap:6px;margin-top:3px;color:var(--muted)}
+.popup-key{color:var(--faint)}
+.popup-val{color:var(--text)}
+.popup-attempts{
+  margin-top:6px;padding-top:6px;
+  border-top:1px solid var(--border);
+  font-size:11px;color:var(--faint);
+}
+
+/* Attack pulse animation for new markers */
+@keyframes markerPulse {
+  0%   { transform: scale(1);   opacity: 1; }
+  50%  { transform: scale(2.5); opacity: 0.4; }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+/* ── Bottom grid ──────────────────────────────────────────────────── */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.grid-3{grid-template-columns:1fr 1fr 1fr}
+@media(max-width:900px){.grid,.grid-3{grid-template-columns:1fr}}
+
+/* ── Panel ────────────────────────────────────────────────────────── */
+.panel{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--rl);overflow:hidden;
+}
+.panel-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0.65rem 1rem;border-bottom:1px solid var(--border);
+  background:var(--surface2);
+}
+.panel-title{font-size:0.68rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:0.09em;color:var(--muted)}
+.panel-body{padding:0.75rem 1rem}
+
+/* ── Attempts table ───────────────────────────────────────────────── */
+.table-wrap{overflow-x:auto}
+.attempts-table{width:100%;border-collapse:collapse}
+.attempts-table th{
+  font-size:0.62rem;text-transform:uppercase;letter-spacing:0.08em;
+  color:var(--faint);padding:4px 8px;text-align:left;
+  border-bottom:1px solid var(--border);
+}
+.attempts-table td{
+  padding:5px 8px;font-size:0.76rem;
+  border-bottom:1px solid var(--border);color:var(--muted);
+  max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.attempts-table tr:last-child td{border-bottom:none}
+.attempts-table tr:hover td{background:var(--surface2);color:var(--text)}
+.new-row{animation:flash 1.2s ease-out}
+@keyframes flash{0%{background:#0d2d1e}100%{background:transparent}}
+.ip{color:var(--blue);cursor:pointer}
+.ip:hover{text-decoration:underline}
+
+/* ── Bar chart ────────────────────────────────────────────────────── */
+.bar-list{list-style:none;display:flex;flex-direction:column;gap:5px}
+.bar-item{display:flex;align-items:center;gap:8px}
+.bar-label{
+  min-width:100px;max-width:100px;font-size:0.73rem;color:var(--muted);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:right;
+}
+.bar-track{flex:1;height:11px;background:var(--surface3);border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;border-radius:2px;transition:width 0.5s ease}
+.bar-count{font-size:0.7rem;color:var(--faint);min-width:26px;text-align:right}
+
+/* ── Commands feed ────────────────────────────────────────────────── */
+.cmd-feed{display:flex;flex-direction:column;gap:3px;max-height:220px;overflow-y:auto}
+.cmd-line{
+  display:flex;gap:8px;align-items:baseline;
+  font-size:0.76rem;padding:3px 5px;border-radius:3px;
+}
+.cmd-line:hover{background:var(--surface2)}
+.cmd-ip{color:var(--faint);min-width:95px;flex-shrink:0;font-size:0.7rem}
+.cmd-prompt{color:var(--green);flex-shrink:0}
+.cmd-text{color:var(--amber);word-break:break-all}
+.cmd-decoy{color:var(--red) !important}
+
+/* ── Scrollbar ────────────────────────────────────────────────────── */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--surface)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+
+/* ── Footer ───────────────────────────────────────────────────────── */
+.footer{
+  margin-top:1.5rem;padding-top:1rem;
+  border-top:1px solid var(--border);
+  font-size:0.65rem;color:var(--faint);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <div class="logo">🍯</div>
+      <div>
+        <div class="title">SSH Honeypot</div>
+        <div class="subtitle" id="port-subtitle">Initializing...</div>
+      </div>
+    </div>
+    <div class="live-badge">
+      <div class="live-dot"></div>LIVE
+    </div>
+  </header>
+
+  <!-- Stat cards -->
+  <div class="cards">
+    <div class="card">
+      <div class="card-label">Total attempts</div>
+      <div class="card-value c-red"  id="stat-total">—</div>
+      <div class="card-sub">all time</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Unique IPs</div>
+      <div class="card-value c-blue" id="stat-ips">—</div>
+      <div class="card-sub">distinct attackers</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Unique passwords</div>
+      <div class="card-value c-amber" id="stat-pwds">—</div>
+      <div class="card-sub">tried credentials</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Commands captured</div>
+      <div class="card-value c-purple" id="stat-cmds">—</div>
+      <div class="card-sub">post-auth activity</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Countries</div>
+      <div class="card-value c-green" id="stat-countries">—</div>
+      <div class="card-sub">origins</div>
+    </div>
+  </div>
+
+  <!-- ── World Map ────────────────────────────────────────────────── -->
+  <div class="map-panel">
+    <div class="map-header">
+      <span class="map-title">🌍 Attack origin map</span>
+      <div class="map-legend">
+        <span><span class="legend-dot" style="background:#f85149"></span>Recent attack</span>
+        <span><span class="legend-dot" style="background:#e3b341"></span>Multiple attempts</span>
+        <span><span class="legend-dot" style="background:#58a6ff"></span>Single attempt</span>
+      </div>
+    </div>
+    <div id="attack-map"></div>
+  </div>
+
+  <!-- Live feed + commands -->
+  <div class="grid" style="margin-bottom:10px">
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Live attempt feed</span>
+        <span style="font-size:0.65rem;color:var(--faint)" id="feed-count">0 attempts</span>
+      </div>
+      <div class="table-wrap">
+        <table class="attempts-table">
+          <thead>
+            <tr>
+              <th>IP</th><th>Username</th><th>Password</th>
+              <th>Country</th><th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="attempts-tbody">
+            <tr><td colspan="5" style="color:var(--faint);text-align:center;padding:1.5rem">
+              Waiting for connections...
+            </td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Commands captured</span>
+        <span style="font-size:0.65rem;color:var(--red)" id="decoy-count"></span>
+      </div>
+      <div class="panel-body">
+        <div class="cmd-feed" id="cmd-feed">
+          <div style="color:var(--faint);font-size:0.76rem">No commands yet...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts row -->
+  <div class="grid grid-3">
+    <div class="panel">
+      <div class="panel-header"><span class="panel-title">Top usernames</span></div>
+      <div class="panel-body"><ul class="bar-list" id="chart-usernames"></ul></div>
+    </div>
+    <div class="panel">
+      <div class="panel-header"><span class="panel-title">Top passwords</span></div>
+      <div class="panel-body"><ul class="bar-list" id="chart-passwords"></ul></div>
+    </div>
+    <div class="panel">
+      <div class="panel-header"><span class="panel-title">Top countries</span></div>
+      <div class="panel-body"><ul class="bar-list" id="chart-countries"></ul></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>SSH Honeypot Dashboard — port 2222</span>
+    <span id="footer-ts">—</span>
+  </footer>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+<script>
+// ═══════════════════════════════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════════════════════════════
+const $ = id => document.getElementById(id);
+const fmt = n => (n ?? 0).toLocaleString();
+const esc = s => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+function timeAgo(isoStr) {
+  const diff = Math.floor((Date.now() - new Date(isoStr + (isoStr.endsWith('Z') ? '' : 'Z'))) / 1000);
+  if (diff < 60)   return diff + 's ago';
+  if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+  return Math.floor(diff / 3600) + 'h ago';
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// LEAFLET MAP
+// ═══════════════════════════════════════════════════════════════════
+
+const map = L.map('attack-map', {
+  center:          [20, 10],
+  zoom:            2,
+  minZoom:         2,
+  maxZoom:         8,
+  zoomControl:     true,
+  attributionControl: false,
+});
+
+// Dark tile layer from CartoDB
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  subdomains: 'abcd',
+  maxZoom:    19,
+}).addTo(map);
+
+// Track markers by IP so we can update existing ones
+const markersByIP = {};
+// Track attempt counts per IP for sizing/coloring
+const countsByIP  = {};
+
+function markerColor(count) {
+  if (count >= 10) return '#f85149';   // red   — heavy hitter
+  if (count >= 3)  return '#e3b341';   // amber — repeated
+  return '#58a6ff';                    // blue  — single attempt
+}
+
+function markerRadius(count) {
+  if (count >= 20) return 10;
+  if (count >= 10) return 8;
+  if (count >= 3)  return 6;
+  return 4;
+}
+
+function makePopupHTML(attempt, count) {
+  const geo = attempt.country ? `${attempt.city || ''} ${attempt.country}`.trim() : 'Unknown';
+  return `
+    <div>
+      <div class="popup-ip">${esc(attempt.ip)}</div>
+      <div class="popup-row">
+        <span class="popup-key">location</span>
+        <span class="popup-val">${esc(geo)}</span>
+      </div>
+      <div class="popup-row">
+        <span class="popup-key">isp</span>
+        <span class="popup-val">${esc(attempt.isp || '—')}</span>
+      </div>
+      <div class="popup-attempts">${count} attempt${count !== 1 ? 's' : ''} logged</div>
+    </div>`;
+}
+
+function addOrUpdateMarker(attempt, flash) {
+  const lat = attempt.latitude;
+  const lon = attempt.longitude;
+  if (!lat || !lon || lat === 0 && lon === 0) return;
+
+  const ip    = attempt.ip;
+  countsByIP[ip] = (countsByIP[ip] || 0) + 1;
+  const count = countsByIP[ip];
+  const color = markerColor(count);
+  const r     = markerRadius(count);
+
+  if (markersByIP[ip]) {
+    // Update existing marker
+    const m = markersByIP[ip];
+    m.setStyle({ color, fillColor: color, radius: r });
+    m.setPopupContent(makePopupHTML(attempt, count));
+  } else {
+    // Create new marker
+    const marker = L.circleMarker([lat, lon], {
+      radius:      r,
+      color:       color,
+      fillColor:   color,
+      fillOpacity: 0.85,
+      weight:      1.5,
+    }).addTo(map);
+
+    marker.bindPopup(makePopupHTML(attempt, count), {
+      maxWidth: 220,
+      className: 'dark-popup',
+    });
+
+    markersByIP[ip] = marker;
+  }
+
+  // Flash animation for new markers — brief pulse ring
+  if (flash) {
+    const pulse = L.circleMarker([lat, lon], {
+      radius:      r,
+      color:       '#f85149',
+      fillColor:   '#f85149',
+      fillOpacity: 0.3,
+      weight:      2,
+    }).addTo(map);
+
+    let step = 0;
+    const anim = setInterval(() => {
+      step++;
+      pulse.setStyle({ radius: r + step * 3, fillOpacity: 0.3 - step * 0.06 });
+      if (step >= 5) {
+        clearInterval(anim);
+        map.removeLayer(pulse);
+      }
+    }, 80);
+  }
+}
+
+function loadMapMarkers(attempts) {
+  // Build count map first
+  attempts.forEach(a => {
+    countsByIP[a.ip] = (countsByIP[a.ip] || 0) + 1;
+  });
+
+  // Deduplicate by IP — only add one marker per IP
+  const seen = new Set();
+  attempts.forEach(a => {
+    if (!seen.has(a.ip) && a.latitude && a.longitude) {
+      seen.add(a.ip);
+      const count = countsByIP[a.ip];
+      const color = markerColor(count);
+      const r     = markerRadius(count);
+
+      const marker = L.circleMarker([a.latitude, a.longitude], {
+        radius:      r,
+        color:       color,
+        fillColor:   color,
+        fillOpacity: 0.85,
+        weight:      1.5,
+      }).addTo(map);
+
+      marker.bindPopup(makePopupHTML(a, count), {
+        maxWidth: 220,
+      });
+
+      markersByIP[a.ip] = marker;
+    }
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// STAT CARDS
+// ═══════════════════════════════════════════════════════════════════
+
+function renderStats(s) {
+  $('stat-total').textContent     = fmt(s.total_attempts);
+  $('stat-ips').textContent       = fmt(s.unique_ips);
+  $('stat-pwds').textContent      = fmt(s.unique_passwords);
+  $('stat-cmds').textContent      = fmt(s.total_commands);
+  $('stat-countries').textContent = fmt(s.top_countries?.length || 0);
+  $('footer-ts').textContent = 'Last update: ' + new Date().toLocaleTimeString();
+  $('port-subtitle').textContent  =
+    `Listening on port 2222  ·  ${fmt(s.total_attempts)} attempts  ·  ${fmt(s.unique_ips)} attackers`;
+
+  renderBarChart('chart-usernames', s.top_usernames, 'username', '#f85149');
+  renderBarChart('chart-passwords', s.top_passwords, 'password', '#e3b341');
+  renderCountryBars('chart-countries', s.top_countries);
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// BAR CHARTS
+// ═══════════════════════════════════════════════════════════════════
+
+function renderBarChart(id, data, key, color) {
+  const el = $(id);
+  if (!data?.length) {
+    el.innerHTML = '<li style="color:var(--faint);font-size:.75rem">No data yet</li>';
+    return;
+  }
+  const max = data[0].count || 1;
+  el.innerHTML = data.slice(0, 8).map(item => {
+    const pct = Math.round((item.count / max) * 100);
+    return `<li class="bar-item">
+      <span class="bar-label" title="${esc(item[key])}">${esc(item[key])}</span>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:${pct}%;background:${color}"></div>
+      </div>
+      <span class="bar-count">${item.count}</span>
+    </li>`;
+  }).join('');
+}
+
+function renderCountryBars(id, data) {
+  const el = $(id);
+  if (!data?.length) {
+    el.innerHTML = '<li style="color:var(--faint);font-size:.75rem">No geo data yet</li>';
+    return;
+  }
+  const max = data[0].count || 1;
+  el.innerHTML = data.slice(0, 8).map(c => {
+    const pct  = Math.round((c.count / max) * 100);
+    return `<li class="bar-item">
+      <span class="bar-label">${esc(c.country || '?')}</span>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:${pct}%;background:#58a6ff"></div>
+      </div>
+      <span class="bar-count">${c.count}</span>
+    </li>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// ATTEMPTS FEED
+// ═══════════════════════════════════════════════════════════════════
+
+let attemptRows = [];
+const MAX_ROWS  = 50;
+
+function prependAttempt(a, flash) {
+  attemptRows.unshift(a);
+  if (attemptRows.length > MAX_ROWS) attemptRows = attemptRows.slice(0, MAX_ROWS);
+  $('feed-count').textContent = `${attemptRows.length} attempts`;
+
+  const geo = a.country ? `${a.country}` : '—';
+  const row = `<tr class="${flash ? 'new-row' : ''}">
+    <td><span class="ip" onclick="zoomToIP('${esc(a.ip)}','${a.latitude||0}','${a.longitude||0}')">${esc(a.ip)}</span></td>
+    <td style="color:var(--text)">${esc(a.username)}</td>
+    <td style="color:var(--amber)">${esc(a.password)}</td>
+    <td>${esc(geo)}</td>
+    <td style="color:var(--faint)">${timeAgo(a.timestamp)}</td>
+  </tr>`;
+
+  const tbody = $('attempts-tbody');
+  tbody.insertAdjacentHTML('afterbegin', row);
+  while (tbody.rows.length > MAX_ROWS) tbody.deleteRow(tbody.rows.length - 1);
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// COMMANDS FEED
+// ═══════════════════════════════════════════════════════════════════
+
+function renderCommands(commands) {
+  const feed = $('cmd-feed');
+  if (!commands?.length) return;
+
+  const decoyCount = commands.filter(c => c.command?.startsWith('[DECOY]')).length;
+  if (decoyCount > 0) {
+    $('decoy-count').textContent = `⚠ ${decoyCount} decoy reads`;
+  }
+
+  feed.innerHTML = commands.slice(0, 25).map(c => {
+    const isDecoy = c.command?.startsWith('[DECOY]');
+    return `<div class="cmd-line">
+      <span class="cmd-ip">${esc(c.ip)}</span>
+      <span class="cmd-prompt">${isDecoy ? '!' : '$'}</span>
+      <span class="cmd-text ${isDecoy ? 'cmd-decoy' : ''}">${esc(c.command)}</span>
+    </div>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// MAP INTERACTIONS
+// ═══════════════════════════════════════════════════════════════════
+
+function zoomToIP(ip, lat, lon) {
+  lat = parseFloat(lat); lon = parseFloat(lon);
+  if (!lat || !lon) return;
+  map.flyTo([lat, lon], 6, { duration: 1.2 });
+  if (markersByIP[ip]) markersByIP[ip].openPopup();
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// INITIAL LOAD
+// ═══════════════════════════════════════════════════════════════════
+
+function initialLoad() {
+  Promise.all([
+    fetch('/api/attempts?limit=500').then(r => r.json()),
+    fetch('/api/commands').then(r => r.json()),
+    fetch('/api/stats').then(r => r.json()),
+  ]).then(([attempts, commands, stats]) => {
+    renderStats(stats);
+
+    // Populate table (most recent 50)
+    if (attempts.length) {
+      $('attempts-tbody').innerHTML = '';
+      attempts.slice(0, 50).forEach(a => prependAttempt(a, false));
+    }
+
+    // Load ALL attempts onto the map (up to 500)
+    loadMapMarkers(attempts);
+    renderCommands(commands);
+  }).catch(e => console.error('Initial load failed:', e));
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// SSE LIVE UPDATES
+// ═══════════════════════════════════════════════════════════════════
+
+function connectSSE() {
+  const es = new EventSource('/api/stream');
+
+  es.addEventListener('stats', e => {
+    renderStats(JSON.parse(e.data));
+  });
+
+  es.addEventListener('attempt', e => {
+    const a = JSON.parse(e.data);
+    prependAttempt(a, true);
+    addOrUpdateMarker(a, true);
+  });
+
+  es.onerror = () => {
+    es.close();
+    setTimeout(connectSSE, 5000);
+  };
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// BOOT
+// ═══════════════════════════════════════════════════════════════════
+
+initialLoad();
+connectSSE();
+
+// Refresh commands every 10s
+setInterval(() => {
+  fetch('/api/commands').then(r => r.json()).then(renderCommands);
+}, 10000);
+</script>
+</body>
+</html>

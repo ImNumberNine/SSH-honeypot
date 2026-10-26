@@ -1,0 +1,708 @@
+15:23:28  INFO      __main__ — SSH Honeypot starting...
+15:23:28  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+15:23:28  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+15:23:28  INFO      honeypot.server — Generating new RSA host key → /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+15:23:28  INFO      honeypot.server — Host key fingerprint: 46:aa:a4:2f:82:56:71:21:86:a1:42:ee:0a:3d:d0:ae
+15:23:28  INFO      __main__ — SSH server started on port 2222
+15:23:28  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+15:23:28  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+15:23:28  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:5000
+15:25:33  INFO      __main__ — SSH Honeypot starting...
+15:25:33  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+15:25:33  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+15:25:33  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+15:25:33  INFO      __main__ — SSH server started on port 2222
+15:25:33  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+15:25:33  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+15:25:33  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:5000
+15:28:04  INFO      __main__ — SSH Honeypot starting...
+15:28:04  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+15:28:04  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+15:28:04  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+15:28:04  INFO      __main__ — SSH server started on port 2222
+15:28:04  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+15:28:04  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+15:28:04  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:8080
+15:28:04  INFO      werkzeug — [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+15:28:04  INFO      werkzeug — [33mPress CTRL+C to quit[0m
+15:28:29  INFO      honeypot.session — SESSION_START  127.0.0.1:46612  id=e18901c2
+15:28:36  INFO      honeypot.attempt — ATTEMPT  127.0.0.1  user=root              pass=and_2120              [Private Network, Local]
+15:28:40  INFO      honeypot.command — COMMAND  127.0.0.1  $ pwd
+15:28:41  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+15:29:12  INFO      honeypot.command — COMMAND  127.0.0.1  $ whoami
+15:29:17  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+15:29:18  INFO      honeypot.command — COMMAND  127.0.0.1  $ ll
+15:29:48  INFO      honeypot.session — SESSION_END  127.0.0.1  id=e18901c2  duration=79.2s
+16:20:43  INFO      __main__ — SSH Honeypot starting...
+16:20:43  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+16:20:43  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+16:36:57  INFO      __main__ — SSH Honeypot starting...
+16:36:57  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+16:36:57  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+16:36:57  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+16:36:57  INFO      __main__ — SSH server started on port 2222
+16:36:57  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+16:36:57  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+16:36:57  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:5000
+16:37:18  INFO      __main__ — SSH Honeypot starting...
+16:37:18  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+16:37:18  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+16:37:18  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+16:37:18  INFO      __main__ — SSH server started on port 2222
+16:37:18  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+16:37:18  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+16:37:18  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:8080
+16:37:18  INFO      werkzeug — [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+16:37:18  INFO      werkzeug — [33mPress CTRL+C to quit[0m
+16:37:28  INFO      honeypot.session — SESSION_START  127.0.0.1:40346  id=969d8552
+16:37:30  INFO      honeypot.attempt — ATTEMPT  127.0.0.1  user=root              pass=                      [Private Network, Local]
+16:37:35  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+16:37:40  INFO      honeypot.command — COMMAND  127.0.0.1  $ cd b	
+16:37:44  INFO      honeypot.command — COMMAND  127.0.0.1  $ cd bin/
+16:37:50  INFO      honeypot.command — COMMAND  127.0.0.1  $ [C[C[C[Cls
+16:37:51  INFO      honeypot.command — COMMAND  127.0.0.1  $ pwd
+16:37:55  INFO      honeypot.command — COMMAND  127.0.0.1  $ mypassword
+16:38:25  INFO      honeypot.session — SESSION_END  127.0.0.1  id=969d8552  duration=57.5s
+16:55:29  INFO      __main__ — SSH Honeypot starting...
+16:55:29  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+16:55:29  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+16:55:29  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+16:55:29  INFO      __main__ — SSH server started on port 2222
+16:55:29  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+16:55:29  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+16:55:29  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:5000
+16:56:24  INFO      __main__ — SSH Honeypot starting...
+16:56:24  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+16:56:24  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+16:56:25  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+16:56:25  INFO      __main__ — SSH server started on port 2222
+16:56:25  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+16:56:25  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+16:56:25  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:8080
+16:56:25  INFO      werkzeug — [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+16:56:25  INFO      werkzeug — [33mPress CTRL+C to quit[0m
+16:56:29  INFO      honeypot.session — SESSION_START  127.0.0.1:45170  id=077447cf
+16:56:32  INFO      honeypot.attempt — ATTEMPT  127.0.0.1  user=root              pass=and_2120              [Private Network, Local]
+16:56:36  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+16:56:43  INFO      honeypot.command — COMMAND  127.0.0.1  $ cd /home
+16:56:48  INFO      honeypot.command — COMMAND  127.0.0.1  $ [3~[3~[C[C[C[C
+16:56:51  INFO      honeypot.command — COMMAND  127.0.0.1  $ pwd
+16:56:52  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+16:57:09  INFO      __main__ — SSH Honeypot starting...
+16:57:09  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+16:57:09  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+16:57:09  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+16:57:10  INFO      __main__ — SSH server started on port 2222
+16:57:10  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+16:57:10  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+16:57:10  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:8080
+16:57:10  INFO      werkzeug — [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+16:57:10  INFO      werkzeug — [33mPress CTRL+C to quit[0m
+16:57:12  INFO      __main__ — SSH Honeypot starting...
+16:57:12  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+16:57:12  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+16:57:12  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+16:57:12  INFO      __main__ — SSH server started on port 2222
+16:57:12  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+16:57:12  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+16:57:12  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:5000
+16:59:00  INFO      __main__ — SSH Honeypot starting...
+16:59:00  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+16:59:00  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+16:59:00  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+16:59:00  INFO      __main__ — SSH server started on port 2222
+16:59:00  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+16:59:00  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+16:59:00  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:8080
+16:59:00  INFO      werkzeug — [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+16:59:00  INFO      werkzeug — [33mPress CTRL+C to quit[0m
+16:59:05  INFO      honeypot.session — SESSION_START  127.0.0.1:46210  id=db024e87
+16:59:11  INFO      honeypot.attempt — ATTEMPT  127.0.0.1  user=root              pass=and_2120              [Private Network, Local]
+16:59:24  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 16:59:24] "GET / HTTP/1.1" 200 -
+16:59:24  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 16:59:24] "GET /api/commands HTTP/1.1" 200 -
+16:59:24  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 16:59:24] "GET /api/attempts?limit=500 HTTP/1.1" 200 -
+16:59:24  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 16:59:24] "GET /api/stats HTTP/1.1" 200 -
+16:59:24  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 16:59:24] "GET /api/stream HTTP/1.1" 200 -
+16:59:24  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 16:59:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+16:59:34  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 16:59:34] "GET /api/commands HTTP/1.1" 200 -
+16:59:41  INFO      honeypot.session — SESSION_END  127.0.0.1  id=db024e87  duration=36.2s
+16:59:44  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 16:59:44] "GET /api/commands HTTP/1.1" 200 -
+16:59:54  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 16:59:54] "GET /api/commands HTTP/1.1" 200 -
+17:00:04  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:00:04] "GET /api/commands HTTP/1.1" 200 -
+17:00:14  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:00:14] "GET /api/commands HTTP/1.1" 200 -
+17:00:24  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:00:24] "GET /api/commands HTTP/1.1" 200 -
+17:00:34  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:00:34] "GET /api/commands HTTP/1.1" 200 -
+17:00:44  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:00:44] "GET /api/commands HTTP/1.1" 200 -
+17:00:54  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:00:54] "GET /api/commands HTTP/1.1" 200 -
+17:01:04  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:01:04] "GET /api/commands HTTP/1.1" 200 -
+17:01:14  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:01:14] "GET /api/commands HTTP/1.1" 200 -
+17:01:24  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:01:24] "GET /api/commands HTTP/1.1" 200 -
+17:01:34  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:01:34] "GET /api/commands HTTP/1.1" 200 -
+17:01:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:01:47] "GET /api/commands HTTP/1.1" 200 -
+17:02:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:02:47] "GET /api/commands HTTP/1.1" 200 -
+17:03:07  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:03:07] "GET /api/commands HTTP/1.1" 200 -
+17:03:14  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:03:14] "GET /api/commands HTTP/1.1" 200 -
+17:03:24  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:03:24] "GET /api/commands HTTP/1.1" 200 -
+17:03:34  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:03:34] "GET /api/commands HTTP/1.1" 200 -
+17:03:44  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:03:44] "GET /api/commands HTTP/1.1" 200 -
+17:03:54  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:03:54] "GET /api/commands HTTP/1.1" 200 -
+17:04:04  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:04:04] "GET /api/commands HTTP/1.1" 200 -
+17:04:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:04:47] "GET /api/commands HTTP/1.1" 200 -
+17:05:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:05:47] "GET /api/commands HTTP/1.1" 200 -
+17:06:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:06:47] "GET /api/commands HTTP/1.1" 200 -
+17:07:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 17:07:47] "GET /api/commands HTTP/1.1" 200 -
+18:02:38  INFO      __main__ — SSH Honeypot starting...
+18:02:38  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+18:02:38  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+18:02:38  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+18:02:38  INFO      __main__ — SSH server started on port 2222
+18:02:38  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+18:02:38  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+18:02:38  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:8080
+18:02:38  INFO      werkzeug — [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+18:02:38  INFO      werkzeug — [33mPress CTRL+C to quit[0m
+18:02:42  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:02:42] "GET /api/stream HTTP/1.1" 200 -
+18:02:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:02:47] "GET /api/commands HTTP/1.1" 200 -
+18:02:54  INFO      honeypot.session — SESSION_START  127.0.0.1:48160  id=3caf35f8
+18:02:57  INFO      honeypot.attempt — ATTEMPT  127.0.0.1  user=root              pass=and_2120              [Private Network, Local]
+18:03:01  INFO      honeypot.command — COMMAND  127.0.0.1  $ lol
+18:03:03  INFO      honeypot.command — COMMAND  127.0.0.1  $ cd
+18:03:10  INFO      honeypot.command — COMMAND  127.0.0.1  $ [C[Cppwd
+18:03:12  INFO      honeypot.command — COMMAND  127.0.0.1  $ pwd
+18:03:20  INFO      honeypot.command — COMMAND  127.0.0.1  $ chmod +x
+18:03:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:03:47] "GET /api/commands HTTP/1.1" 200 -
+18:03:53  INFO      honeypot.command — COMMAND  127.0.0.1  $ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+18:04:03  INFO      honeypot.command — COMMAND  127.0.0.1  $ touch passwords.txt
+18:04:23  INFO      honeypot.session — SESSION_START  127.0.0.1:57326  id=1b27693f
+18:04:26  INFO      honeypot.attempt — ATTEMPT  127.0.0.1  user=root              pass=and_2120              [Private Network, Local]
+18:04:32  INFO      honeypot.command — COMMAND  127.0.0.1  $ pwd
+18:04:34  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+18:04:35  INFO      honeypot.session — SESSION_END  127.0.0.1  id=3caf35f8  duration=100.6s
+18:04:39  INFO      honeypot.command — COMMAND  127.0.0.1  $ cd bing	
+18:04:41  INFO      honeypot.command — COMMAND  127.0.0.1  $ cd bin
+18:04:46  INFO      honeypot.command — COMMAND  127.0.0.1  $ [C[C[3~[3~
+18:04:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:04:47] "GET /api/commands HTTP/1.1" 200 -
+18:04:51  INFO      honeypot.command — COMMAND  127.0.0.1  $ pwd
+18:04:53  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+18:05:23  INFO      honeypot.session — SESSION_END  127.0.0.1  id=1b27693f  duration=60.1s
+18:05:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:05:47] "GET /api/commands HTTP/1.1" 200 -
+18:06:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:06:47] "GET /api/commands HTTP/1.1" 200 -
+18:07:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:07:47] "GET /api/commands HTTP/1.1" 200 -
+18:08:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:08:47] "GET /api/commands HTTP/1.1" 200 -
+18:09:32  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:32] "GET /api/commands HTTP/1.1" 200 -
+18:09:34  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:34] "GET /api/commands HTTP/1.1" 200 -
+18:09:36  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:36] "GET / HTTP/1.1" 200 -
+18:09:36  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:36] "GET /api/commands HTTP/1.1" 200 -
+18:09:36  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:36] "GET /api/attempts?limit=500 HTTP/1.1" 200 -
+18:09:36  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:36] "GET /api/stream HTTP/1.1" 200 -
+18:09:36  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:36] "GET /api/stats HTTP/1.1" 200 -
+18:09:38  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:38] "GET / HTTP/1.1" 200 -
+18:09:38  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:38] "GET /api/attempts?limit=500 HTTP/1.1" 200 -
+18:09:38  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:38] "GET /api/commands HTTP/1.1" 200 -
+18:09:38  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:38] "GET /api/stats HTTP/1.1" 200 -
+18:09:38  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:38] "GET /api/stream HTTP/1.1" 200 -
+18:09:48  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:48] "GET /api/commands HTTP/1.1" 200 -
+18:09:52  INFO      honeypot.session — SESSION_START  127.0.0.1:58476  id=c1194319
+18:09:55  INFO      honeypot.attempt — ATTEMPT  127.0.0.1  user=root              pass=andy                  [Private Network, Local]
+18:09:58  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:09:58] "GET /api/commands HTTP/1.1" 200 -
+18:10:03  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+18:10:07  INFO      honeypot.command — COMMAND  127.0.0.1  $ cd bin/
+18:10:08  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:10:08] "GET /api/commands HTTP/1.1" 200 -
+18:10:18  INFO      honeypot.command — COMMAND  127.0.0.1  $ [C[C[C[3~[3~[C[Cld[5~
+18:10:18  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:10:18] "GET /api/commands HTTP/1.1" 200 -
+18:10:28  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:10:28] "GET /api/commands HTTP/1.1" 200 -
+18:10:29  INFO      honeypot.command — COMMAND  127.0.0.1  $ c
+18:10:39  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:10:39] "GET /api/commands HTTP/1.1" 200 -
+18:10:49  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:10:49] "GET /api/commands HTTP/1.1" 200 -
+18:10:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:10:59] "GET /api/commands HTTP/1.1" 200 -
+18:11:02  INFO      honeypot.session — SESSION_END  127.0.0.1  id=c1194319  duration=69.4s
+18:11:02  INFO      honeypot.session — SESSION_START  127.0.0.1:47684  id=7c208059
+18:11:04  INFO      honeypot.attempt — ATTEMPT  127.0.0.1  user=root              pass=                      [Private Network, Local]
+18:11:07  INFO      honeypot.command — COMMAND  127.0.0.1  $ pwd
+18:11:09  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:11:09] "GET /api/commands HTTP/1.1" 200 -
+18:11:09  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+18:11:13  INFO      honeypot.command — COMMAND  127.0.0.1  $ cd bin/
+18:11:19  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:11:19] "GET /api/commands HTTP/1.1" 200 -
+18:11:29  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:11:29] "GET /api/commands HTTP/1.1" 200 -
+18:11:47  INFO      honeypot.session — SESSION_END  127.0.0.1  id=7c208059  duration=45.3s
+18:11:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:11:47] "GET /api/commands HTTP/1.1" 200 -
+18:11:56  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:11:56] "GET /api/commands HTTP/1.1" 200 -
+18:11:58  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:11:58] "GET /api/commands HTTP/1.1" 200 -
+18:12:08  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:12:08] "GET /api/commands HTTP/1.1" 200 -
+18:12:19  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:12:19] "GET /api/commands HTTP/1.1" 200 -
+18:12:29  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:12:29] "GET /api/commands HTTP/1.1" 200 -
+18:12:39  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:12:39] "GET /api/commands HTTP/1.1" 200 -
+18:12:49  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:12:49] "GET /api/commands HTTP/1.1" 200 -
+18:12:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:12:59] "GET /api/commands HTTP/1.1" 200 -
+18:13:09  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:13:09] "GET /api/commands HTTP/1.1" 200 -
+18:13:19  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:13:19] "GET /api/commands HTTP/1.1" 200 -
+18:13:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:13:47] "GET /api/commands HTTP/1.1" 200 -
+18:14:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:14:47] "GET /api/commands HTTP/1.1" 200 -
+18:14:55  INFO      honeypot.session — SESSION_START  127.0.0.1:42088  id=3e848342
+18:14:57  INFO      honeypot.attempt — ATTEMPT  127.0.0.1  user=root              pass=andy                  [Private Network, Local]
+18:15:01  INFO      honeypot.command — COMMAND  127.0.0.1  $ pwd
+18:15:03  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+18:15:06  INFO      honeypot.command — COMMAND  127.0.0.1  $ cd bin/
+18:15:08  INFO      honeypot.command — COMMAND  127.0.0.1  $ [3~[3~[3~[3~
+18:15:46  INFO      honeypot.session — SESSION_END  127.0.0.1  id=3e848342  duration=50.6s
+18:15:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:15:47] "GET /api/commands HTTP/1.1" 200 -
+18:16:20  INFO      honeypot.session — SESSION_START  127.0.0.1:56276  id=f7df021a
+18:16:21  INFO      honeypot.attempt — ATTEMPT  127.0.0.1  user=root              pass=                      [Private Network, Local]
+18:16:25  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+18:16:33  INFO      honeypot.command — COMMAND  127.0.0.1  $ cd dev	
+18:16:40  INFO      honeypot.command — COMMAND  127.0.0.1  $ [C[C[C[C[D[D[C/
+18:16:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:16:47] "GET /api/commands HTTP/1.1" 200 -
+18:17:10  INFO      honeypot.session — SESSION_END  127.0.0.1  id=f7df021a  duration=50.4s
+18:17:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:17:47] "GET /api/commands HTTP/1.1" 200 -
+18:18:18  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:18:18] "GET /api/commands HTTP/1.1" 200 -
+18:18:29  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:18:29] "GET /api/commands HTTP/1.1" 200 -
+18:18:39  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:18:39] "GET /api/commands HTTP/1.1" 200 -
+18:18:49  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:18:49] "GET /api/commands HTTP/1.1" 200 -
+18:18:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:18:59] "GET /api/commands HTTP/1.1" 200 -
+18:19:09  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:19:09] "GET /api/commands HTTP/1.1" 200 -
+18:19:19  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:19:19] "GET /api/commands HTTP/1.1" 200 -
+18:19:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:19:47] "GET /api/commands HTTP/1.1" 200 -
+18:20:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:20:47] "GET /api/commands HTTP/1.1" 200 -
+18:21:42  INFO      __main__ — SSH Honeypot starting...
+18:21:42  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+18:21:42  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+18:21:43  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+18:21:43  INFO      __main__ — SSH server started on port 2222
+18:21:43  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+18:21:43  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+18:21:43  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:8080
+18:21:43  INFO      werkzeug — [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+18:21:43  INFO      werkzeug — [33mPress CTRL+C to quit[0m
+18:21:45  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:21:45] "GET /api/stream HTTP/1.1" 200 -
+18:21:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:21:47] "GET /api/commands HTTP/1.1" 200 -
+18:21:47  INFO      honeypot.session — SESSION_START  127.0.0.1:56362  id=606000e8
+18:21:49  INFO      honeypot.attempt — ATTEMPT  127.0.0.1  user=root              pass=                      [Private Network, Local]
+18:21:52  INFO      honeypot.command — COMMAND  127.0.0.1  $ pwd
+18:21:54  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+18:21:58  INFO      honeypot.command — COMMAND  127.0.0.1  $ cd bin/
+18:22:02  INFO      honeypot.command — COMMAND  127.0.0.1  $ pwd
+18:22:13  INFO      honeypot.command — COMMAND  127.0.0.1  $ touch cluster_binary.bin
+18:22:16  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+18:22:46  INFO      honeypot.session — SESSION_END  127.0.0.1  id=606000e8  duration=58.7s
+18:22:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:22:47] "GET /api/commands HTTP/1.1" 200 -
+18:23:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:23:47] "GET /api/commands HTTP/1.1" 200 -
+18:24:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:24:47] "GET /api/commands HTTP/1.1" 200 -
+18:25:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:25:47] "GET /api/commands HTTP/1.1" 200 -
+18:26:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:26:47] "GET /api/commands HTTP/1.1" 200 -
+18:27:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:27:47] "GET /api/commands HTTP/1.1" 200 -
+18:28:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:28:47] "GET /api/commands HTTP/1.1" 200 -
+18:29:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:29:47] "GET /api/commands HTTP/1.1" 200 -
+18:30:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:30:47] "GET /api/commands HTTP/1.1" 200 -
+18:31:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:31:47] "GET /api/commands HTTP/1.1" 200 -
+18:32:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:32:47] "GET /api/commands HTTP/1.1" 200 -
+18:33:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:33:47] "GET /api/commands HTTP/1.1" 200 -
+18:34:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:34:47] "GET /api/commands HTTP/1.1" 200 -
+18:35:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:35:47] "GET /api/commands HTTP/1.1" 200 -
+18:36:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:36:47] "GET /api/commands HTTP/1.1" 200 -
+18:37:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:37:47] "GET /api/commands HTTP/1.1" 200 -
+18:38:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:38:47] "GET /api/commands HTTP/1.1" 200 -
+18:39:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:39:47] "GET /api/commands HTTP/1.1" 200 -
+18:40:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:40:47] "GET /api/commands HTTP/1.1" 200 -
+18:41:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:41:47] "GET /api/commands HTTP/1.1" 200 -
+18:42:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:42:47] "GET /api/commands HTTP/1.1" 200 -
+18:43:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:43:47] "GET /api/commands HTTP/1.1" 200 -
+18:44:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:44:47] "GET /api/commands HTTP/1.1" 200 -
+18:45:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:45:47] "GET /api/commands HTTP/1.1" 200 -
+18:46:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:46:47] "GET /api/commands HTTP/1.1" 200 -
+18:47:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:47:47] "GET /api/commands HTTP/1.1" 200 -
+18:48:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:48:47] "GET /api/commands HTTP/1.1" 200 -
+18:49:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:49:47] "GET /api/commands HTTP/1.1" 200 -
+18:50:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:50:47] "GET /api/commands HTTP/1.1" 200 -
+18:51:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:51:47] "GET /api/commands HTTP/1.1" 200 -
+18:52:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:52:47] "GET /api/commands HTTP/1.1" 200 -
+18:53:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:53:47] "GET /api/commands HTTP/1.1" 200 -
+18:54:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:54:47] "GET /api/commands HTTP/1.1" 200 -
+18:55:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:55:47] "GET /api/commands HTTP/1.1" 200 -
+18:56:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:56:47] "GET /api/commands HTTP/1.1" 200 -
+18:57:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:57:47] "GET /api/commands HTTP/1.1" 200 -
+18:58:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:58:47] "GET /api/commands HTTP/1.1" 200 -
+18:59:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 18:59:47] "GET /api/commands HTTP/1.1" 200 -
+19:00:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:00:47] "GET /api/commands HTTP/1.1" 200 -
+19:01:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:01:47] "GET /api/commands HTTP/1.1" 200 -
+19:02:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:02:47] "GET /api/commands HTTP/1.1" 200 -
+19:03:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:03:47] "GET /api/commands HTTP/1.1" 200 -
+19:04:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:04:47] "GET /api/commands HTTP/1.1" 200 -
+19:05:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:05:47] "GET /api/commands HTTP/1.1" 200 -
+19:06:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:06:47] "GET /api/commands HTTP/1.1" 200 -
+19:07:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:07:47] "GET /api/commands HTTP/1.1" 200 -
+19:08:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:08:47] "GET /api/commands HTTP/1.1" 200 -
+19:09:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:09:47] "GET /api/commands HTTP/1.1" 200 -
+19:10:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:10:47] "GET /api/commands HTTP/1.1" 200 -
+19:11:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:11:47] "GET /api/commands HTTP/1.1" 200 -
+19:12:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:12:47] "GET /api/commands HTTP/1.1" 200 -
+19:13:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:13:47] "GET /api/commands HTTP/1.1" 200 -
+19:14:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:14:47] "GET /api/commands HTTP/1.1" 200 -
+19:15:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:15:47] "GET /api/commands HTTP/1.1" 200 -
+19:16:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:16:47] "GET /api/commands HTTP/1.1" 200 -
+19:17:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:17:47] "GET /api/commands HTTP/1.1" 200 -
+19:18:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:18:47] "GET /api/commands HTTP/1.1" 200 -
+19:19:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:19:47] "GET /api/commands HTTP/1.1" 200 -
+19:20:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:20:47] "GET /api/commands HTTP/1.1" 200 -
+19:21:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:21:47] "GET /api/commands HTTP/1.1" 200 -
+19:22:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:22:47] "GET /api/commands HTTP/1.1" 200 -
+19:23:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:23:47] "GET /api/commands HTTP/1.1" 200 -
+19:24:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:24:47] "GET /api/commands HTTP/1.1" 200 -
+19:25:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:25:47] "GET /api/commands HTTP/1.1" 200 -
+19:26:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:26:47] "GET /api/commands HTTP/1.1" 200 -
+19:27:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:27:47] "GET /api/commands HTTP/1.1" 200 -
+19:28:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:28:47] "GET /api/commands HTTP/1.1" 200 -
+19:29:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:29:47] "GET /api/commands HTTP/1.1" 200 -
+19:30:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:30:47] "GET /api/commands HTTP/1.1" 200 -
+19:31:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:31:47] "GET /api/commands HTTP/1.1" 200 -
+19:32:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:32:47] "GET /api/commands HTTP/1.1" 200 -
+19:33:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:33:47] "GET /api/commands HTTP/1.1" 200 -
+19:34:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:34:47] "GET /api/commands HTTP/1.1" 200 -
+19:35:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:35:47] "GET /api/commands HTTP/1.1" 200 -
+19:36:47  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 19:36:47] "GET /api/commands HTTP/1.1" 200 -
+20:26:42  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:26:42] "GET /api/stream HTTP/1.1" 200 -
+20:27:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:27:16] "GET /api/commands HTTP/1.1" 200 -
+20:28:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:28:16] "GET /api/commands HTTP/1.1" 200 -
+20:29:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:29:16] "GET /api/commands HTTP/1.1" 200 -
+20:30:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:30:16] "GET /api/commands HTTP/1.1" 200 -
+20:31:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:31:16] "GET /api/commands HTTP/1.1" 200 -
+20:32:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:32:16] "GET /api/commands HTTP/1.1" 200 -
+20:33:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:33:16] "GET /api/commands HTTP/1.1" 200 -
+20:34:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:34:16] "GET /api/commands HTTP/1.1" 200 -
+20:35:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:35:16] "GET /api/commands HTTP/1.1" 200 -
+20:36:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:36:16] "GET /api/commands HTTP/1.1" 200 -
+20:37:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:37:16] "GET /api/commands HTTP/1.1" 200 -
+20:38:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:38:16] "GET /api/commands HTTP/1.1" 200 -
+20:39:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:39:16] "GET /api/commands HTTP/1.1" 200 -
+20:40:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:40:16] "GET /api/commands HTTP/1.1" 200 -
+20:41:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:41:16] "GET /api/commands HTTP/1.1" 200 -
+20:42:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:42:16] "GET /api/commands HTTP/1.1" 200 -
+20:43:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:43:16] "GET /api/commands HTTP/1.1" 200 -
+20:44:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:44:16] "GET /api/commands HTTP/1.1" 200 -
+20:45:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:45:16] "GET /api/commands HTTP/1.1" 200 -
+20:46:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:46:16] "GET /api/commands HTTP/1.1" 200 -
+20:47:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:47:16] "GET /api/commands HTTP/1.1" 200 -
+20:48:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:16] "GET /api/commands HTTP/1.1" 200 -
+20:48:57  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:57] "[33mGET /WebGoat HTTP/1.1[0m" 404 -
+20:48:58  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:58] "[33mGET /WebGoat HTTP/1.1[0m" 404 -
+20:48:58  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:58] "[33mGET /WebGoat/.git/config HTTP/1.1[0m" 404 -
+20:48:58  ERROR     werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:58] code 400, message Bad request version ('\x00\x04\x03\x00\x01\x02\x00')
+20:48:58  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:58] "[31m[1m\x16\x03\x01\x05ö\x01\x00\x05ò\x03\x03ÅP¡\x1fcÎ^°Ü¬Y°eá¥þ¿\x93(WüÔ;2\x94eÈ#Ïd£9 ÌçX= ´$ÝÁÂfF\x9aq,y¯4\x06\x87¼ðãF¡Ìïj@­¶#\x00"\x13\x02\x13\x03\x13\x01À,À0À+À/Ì©Ì¨À$À(À#À'\x00\x9f\x00\x9e\x00k\x00g\x01\x00\x05\x87ÿ\x01\x00\x01\x00\x00\x00\x00\x0e\x00\x0c\x00\x00\x09localhost\x00\x0b\x00\x04\x03\x00\x01\x02\x00[0m" 400 -
+20:48:58  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:58] "[33mGET /WebGoat/.git/HEAD HTTP/1.1[0m" 404 -
+20:48:58  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:58] "[33mGET /WebGoat/.env HTTP/1.1[0m" 404 -
+20:48:58  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:58] "[33mGET /WebGoat/.env.local HTTP/1.1[0m" 404 -
+20:48:58  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:58] "[33mGET /WebGoat/.env.production HTTP/1.1[0m" 404 -
+20:48:58  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:58] "[33mGET /WebGoat/backup.sql HTTP/1.1[0m" 404 -
+20:48:58  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:58] "[33mGET /WebGoat/dump.sql HTTP/1.1[0m" 404 -
+20:48:58  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:58] "[33mGET /WebGoat/db.sql HTTP/1.1[0m" 404 -
+20:48:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:59] "[33mGET /WebGoat/database.sql HTTP/1.1[0m" 404 -
+20:48:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:59] "[33mGET /WebGoat/admin HTTP/1.1[0m" 404 -
+20:48:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:59] "[33mGET /WebGoat/admin/ HTTP/1.1[0m" 404 -
+20:48:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:59] "[33mGET /WebGoat/administrator HTTP/1.1[0m" 404 -
+20:48:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:59] "[33mGET /WebGoat/wp-admin/ HTTP/1.1[0m" 404 -
+20:48:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:59] "[33mGET /WebGoat/phpmyadmin/ HTTP/1.1[0m" 404 -
+20:48:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:59] "[33mGET /WebGoat/adminer.php HTTP/1.1[0m" 404 -
+20:48:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:59] "[33mGET /WebGoat/config.php HTTP/1.1[0m" 404 -
+20:48:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:59] "[33mGET /WebGoat/wp-config.php.bak HTTP/1.1[0m" 404 -
+20:48:59  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:48:59] "[33mGET /WebGoat/web.config HTTP/1.1[0m" 404 -
+20:49:00  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:00] "[33mGET /WebGoat/settings.py HTTP/1.1[0m" 404 -
+20:49:00  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:00] "[33mGET /WebGoat/phpinfo.php HTTP/1.1[0m" 404 -
+20:49:00  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:00] "[33mGET /WebGoat/info.php HTTP/1.1[0m" 404 -
+20:49:00  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:00] "[33mGET /WebGoat/test.php HTTP/1.1[0m" 404 -
+20:49:00  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:00] "[33mGET /WebGoat/debug HTTP/1.1[0m" 404 -
+20:49:00  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:00] "[33mGET /WebGoat/console HTTP/1.1[0m" 404 -
+20:49:00  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:00] "[33mGET /WebGoat/_profiler HTTP/1.1[0m" 404 -
+20:49:00  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:00] "[33mGET /WebGoat/actuator HTTP/1.1[0m" 404 -
+20:49:00  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:00] "[33mGET /WebGoat/actuator/env HTTP/1.1[0m" 404 -
+20:49:00  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:00] "[33mGET /WebGoat/logs/ HTTP/1.1[0m" 404 -
+20:49:01  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:01] "[33mGET /WebGoat/error.log HTTP/1.1[0m" 404 -
+20:49:01  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:01] "[33mGET /WebGoat/access.log HTTP/1.1[0m" 404 -
+20:49:01  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:01] "[33mGET /WebGoat/.svn/entries HTTP/1.1[0m" 404 -
+20:49:01  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:01] "[33mGET /WebGoat/.hg/ HTTP/1.1[0m" 404 -
+20:49:01  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:01] "[33mGET /WebGoat/Makefile HTTP/1.1[0m" 404 -
+20:49:01  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:01] "[33mGET /WebGoat/Dockerfile HTTP/1.1[0m" 404 -
+20:49:01  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:01] "[33mGET /WebGoat/docker-compose.yml HTTP/1.1[0m" 404 -
+20:49:01  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:01] "[33mGET /WebGoat/README.md HTTP/1.1[0m" 404 -
+20:49:01  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:01] "[33mGET /WebGoat/robots.txt HTTP/1.1[0m" 404 -
+20:49:01  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:01] "[33mGET /WebGoat/sitemap.xml HTTP/1.1[0m" 404 -
+20:49:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:49:16] "GET /api/commands HTTP/1.1" 200 -
+20:50:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:50:16] "GET /api/commands HTTP/1.1" 200 -
+20:51:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:51:16] "GET /api/commands HTTP/1.1" 200 -
+20:52:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:52:16] "GET /api/commands HTTP/1.1" 200 -
+20:53:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:53:16] "GET /api/commands HTTP/1.1" 200 -
+20:54:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:54:16] "GET /api/commands HTTP/1.1" 200 -
+20:55:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:55:16] "GET /api/commands HTTP/1.1" 200 -
+20:56:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:56:16] "GET /api/commands HTTP/1.1" 200 -
+20:57:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:57:16] "GET /api/commands HTTP/1.1" 200 -
+20:58:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:58:16] "GET /api/commands HTTP/1.1" 200 -
+20:59:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 20:59:16] "GET /api/commands HTTP/1.1" 200 -
+21:00:16  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:00:16] "GET /api/commands HTTP/1.1" 200 -
+21:01:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:01:17] "GET /api/commands HTTP/1.1" 200 -
+21:02:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:02:17] "GET /api/commands HTTP/1.1" 200 -
+21:03:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:03:17] "GET /api/commands HTTP/1.1" 200 -
+21:04:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:04:17] "GET /api/commands HTTP/1.1" 200 -
+21:05:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:05:17] "GET /api/commands HTTP/1.1" 200 -
+21:06:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:06:17] "GET /api/commands HTTP/1.1" 200 -
+21:07:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:07:17] "GET /api/commands HTTP/1.1" 200 -
+21:08:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:08:17] "GET /api/commands HTTP/1.1" 200 -
+21:09:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:09:17] "GET /api/commands HTTP/1.1" 200 -
+21:10:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:10:17] "GET /api/commands HTTP/1.1" 200 -
+21:11:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:11:17] "GET /api/commands HTTP/1.1" 200 -
+21:12:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:12:17] "GET /api/commands HTTP/1.1" 200 -
+21:13:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:13:17] "GET /api/commands HTTP/1.1" 200 -
+21:14:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:14:17] "GET /api/commands HTTP/1.1" 200 -
+21:15:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:15:17] "GET /api/commands HTTP/1.1" 200 -
+21:16:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:16:17] "GET /api/commands HTTP/1.1" 200 -
+21:17:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:17:17] "GET /api/commands HTTP/1.1" 200 -
+21:18:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:18:17] "GET /api/commands HTTP/1.1" 200 -
+21:19:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:19:17] "GET /api/commands HTTP/1.1" 200 -
+21:20:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:20:17] "GET /api/commands HTTP/1.1" 200 -
+21:21:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:21:17] "GET /api/commands HTTP/1.1" 200 -
+21:22:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:22:17] "GET /api/commands HTTP/1.1" 200 -
+21:23:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:23:17] "GET /api/commands HTTP/1.1" 200 -
+21:24:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:24:17] "GET /api/commands HTTP/1.1" 200 -
+21:25:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:25:17] "GET /api/commands HTTP/1.1" 200 -
+21:26:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:26:17] "GET /api/commands HTTP/1.1" 200 -
+21:27:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:27:17] "GET /api/commands HTTP/1.1" 200 -
+21:28:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:28:17] "GET /api/commands HTTP/1.1" 200 -
+21:29:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:29:17] "GET /api/commands HTTP/1.1" 200 -
+21:30:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:30:17] "GET /api/commands HTTP/1.1" 200 -
+21:31:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:31:17] "GET /api/commands HTTP/1.1" 200 -
+21:32:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:32:17] "GET /api/commands HTTP/1.1" 200 -
+21:33:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:33:17] "GET /api/commands HTTP/1.1" 200 -
+21:34:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:34:17] "GET /api/commands HTTP/1.1" 200 -
+21:35:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:35:17] "GET /api/commands HTTP/1.1" 200 -
+21:36:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:36:17] "GET /api/commands HTTP/1.1" 200 -
+21:37:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:37:17] "GET /api/commands HTTP/1.1" 200 -
+21:38:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:38:17] "GET /api/commands HTTP/1.1" 200 -
+21:39:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:39:17] "GET /api/commands HTTP/1.1" 200 -
+21:40:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:40:17] "GET /api/commands HTTP/1.1" 200 -
+21:41:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:41:17] "GET /api/commands HTTP/1.1" 200 -
+21:42:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:42:17] "GET /api/commands HTTP/1.1" 200 -
+21:43:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:43:17] "GET /api/commands HTTP/1.1" 200 -
+21:44:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:44:17] "GET /api/commands HTTP/1.1" 200 -
+21:45:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:45:17] "GET /api/commands HTTP/1.1" 200 -
+21:46:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:46:17] "GET /api/commands HTTP/1.1" 200 -
+21:47:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:47:17] "GET /api/commands HTTP/1.1" 200 -
+21:48:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:48:17] "GET /api/commands HTTP/1.1" 200 -
+21:49:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:49:17] "GET /api/commands HTTP/1.1" 200 -
+21:50:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:50:17] "GET /api/commands HTTP/1.1" 200 -
+21:51:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:51:17] "GET /api/commands HTTP/1.1" 200 -
+21:52:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:52:17] "GET /api/commands HTTP/1.1" 200 -
+21:53:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:53:17] "GET /api/commands HTTP/1.1" 200 -
+21:54:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:54:17] "GET /api/commands HTTP/1.1" 200 -
+21:55:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:55:17] "GET /api/commands HTTP/1.1" 200 -
+21:56:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:56:17] "GET /api/commands HTTP/1.1" 200 -
+21:57:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:57:17] "GET /api/commands HTTP/1.1" 200 -
+21:58:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:58:17] "GET /api/commands HTTP/1.1" 200 -
+21:59:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 21:59:17] "GET /api/commands HTTP/1.1" 200 -
+22:00:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:00:17] "GET /api/commands HTTP/1.1" 200 -
+22:01:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:01:17] "GET /api/commands HTTP/1.1" 200 -
+22:02:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:02:17] "GET /api/commands HTTP/1.1" 200 -
+22:03:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:03:17] "GET /api/commands HTTP/1.1" 200 -
+22:04:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:04:17] "GET /api/commands HTTP/1.1" 200 -
+22:05:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:05:17] "GET /api/commands HTTP/1.1" 200 -
+22:06:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:06:17] "GET /api/commands HTTP/1.1" 200 -
+22:07:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:07:17] "GET /api/commands HTTP/1.1" 200 -
+22:08:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:08:17] "GET /api/commands HTTP/1.1" 200 -
+22:09:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:09:17] "GET /api/commands HTTP/1.1" 200 -
+22:10:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:10:17] "GET /api/commands HTTP/1.1" 200 -
+22:11:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:11:17] "GET /api/commands HTTP/1.1" 200 -
+22:12:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:12:17] "GET /api/commands HTTP/1.1" 200 -
+22:13:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:13:17] "GET /api/commands HTTP/1.1" 200 -
+22:14:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:14:17] "GET /api/commands HTTP/1.1" 200 -
+22:15:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:15:17] "GET /api/commands HTTP/1.1" 200 -
+22:16:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:16:17] "GET /api/commands HTTP/1.1" 200 -
+22:17:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:17:17] "GET /api/commands HTTP/1.1" 200 -
+22:18:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:18:17] "GET /api/commands HTTP/1.1" 200 -
+22:19:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:19:17] "GET /api/commands HTTP/1.1" 200 -
+22:20:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:20:17] "GET /api/commands HTTP/1.1" 200 -
+22:21:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:21:17] "GET /api/commands HTTP/1.1" 200 -
+22:22:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:22:17] "GET /api/commands HTTP/1.1" 200 -
+22:23:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:23:17] "GET /api/commands HTTP/1.1" 200 -
+22:24:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:24:17] "GET /api/commands HTTP/1.1" 200 -
+22:25:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:25:17] "GET /api/commands HTTP/1.1" 200 -
+22:26:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:26:17] "GET /api/commands HTTP/1.1" 200 -
+22:27:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:27:17] "GET /api/commands HTTP/1.1" 200 -
+22:28:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:28:17] "GET /api/commands HTTP/1.1" 200 -
+22:29:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:29:17] "GET /api/commands HTTP/1.1" 200 -
+22:30:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:30:17] "GET /api/commands HTTP/1.1" 200 -
+22:31:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:31:17] "GET /api/commands HTTP/1.1" 200 -
+22:32:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:32:17] "GET /api/commands HTTP/1.1" 200 -
+22:33:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:33:17] "GET /api/commands HTTP/1.1" 200 -
+22:34:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:34:17] "GET /api/commands HTTP/1.1" 200 -
+22:35:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:35:17] "GET /api/commands HTTP/1.1" 200 -
+22:36:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:36:17] "GET /api/commands HTTP/1.1" 200 -
+22:37:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:37:17] "GET /api/commands HTTP/1.1" 200 -
+22:38:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:38:17] "GET /api/commands HTTP/1.1" 200 -
+22:39:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:39:17] "GET /api/commands HTTP/1.1" 200 -
+22:40:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:40:17] "GET /api/commands HTTP/1.1" 200 -
+22:41:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:41:17] "GET /api/commands HTTP/1.1" 200 -
+22:42:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:42:17] "GET /api/commands HTTP/1.1" 200 -
+22:43:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:43:17] "GET /api/commands HTTP/1.1" 200 -
+22:44:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:44:17] "GET /api/commands HTTP/1.1" 200 -
+22:45:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:45:17] "GET /api/commands HTTP/1.1" 200 -
+22:46:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:46:17] "GET /api/commands HTTP/1.1" 200 -
+22:47:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:47:17] "GET /api/commands HTTP/1.1" 200 -
+22:48:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:48:17] "GET /api/commands HTTP/1.1" 200 -
+22:49:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:49:17] "GET /api/commands HTTP/1.1" 200 -
+22:50:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:50:17] "GET /api/commands HTTP/1.1" 200 -
+22:51:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:51:17] "GET /api/commands HTTP/1.1" 200 -
+22:52:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:52:17] "GET /api/commands HTTP/1.1" 200 -
+22:53:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:53:17] "GET /api/commands HTTP/1.1" 200 -
+22:54:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:54:17] "GET /api/commands HTTP/1.1" 200 -
+22:55:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:55:17] "GET /api/commands HTTP/1.1" 200 -
+22:56:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:56:17] "GET /api/commands HTTP/1.1" 200 -
+22:57:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:57:17] "GET /api/commands HTTP/1.1" 200 -
+22:58:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:58:17] "GET /api/commands HTTP/1.1" 200 -
+22:59:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 22:59:17] "GET /api/commands HTTP/1.1" 200 -
+23:00:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:00:17] "GET /api/commands HTTP/1.1" 200 -
+23:01:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:01:17] "GET /api/commands HTTP/1.1" 200 -
+23:02:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:02:17] "GET /api/commands HTTP/1.1" 200 -
+23:03:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:03:17] "GET /api/commands HTTP/1.1" 200 -
+23:04:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:04:17] "GET /api/commands HTTP/1.1" 200 -
+23:05:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:05:17] "GET /api/commands HTTP/1.1" 200 -
+23:06:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:06:17] "GET /api/commands HTTP/1.1" 200 -
+23:07:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:07:17] "GET /api/commands HTTP/1.1" 200 -
+23:08:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:08:17] "GET /api/commands HTTP/1.1" 200 -
+23:09:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:09:17] "GET /api/commands HTTP/1.1" 200 -
+23:10:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:10:17] "GET /api/commands HTTP/1.1" 200 -
+23:11:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:11:17] "GET /api/commands HTTP/1.1" 200 -
+23:12:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:12:17] "GET /api/commands HTTP/1.1" 200 -
+23:13:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:13:17] "GET /api/commands HTTP/1.1" 200 -
+23:14:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:14:17] "GET /api/commands HTTP/1.1" 200 -
+23:15:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:15:17] "GET /api/commands HTTP/1.1" 200 -
+23:16:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:16:17] "GET /api/commands HTTP/1.1" 200 -
+23:17:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:17:17] "GET /api/commands HTTP/1.1" 200 -
+23:18:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:18:17] "GET /api/commands HTTP/1.1" 200 -
+23:19:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:19:17] "GET /api/commands HTTP/1.1" 200 -
+23:20:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:20:17] "GET /api/commands HTTP/1.1" 200 -
+23:21:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:21:17] "GET /api/commands HTTP/1.1" 200 -
+23:22:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:22:17] "GET /api/commands HTTP/1.1" 200 -
+23:23:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:23:17] "GET /api/commands HTTP/1.1" 200 -
+23:24:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:24:17] "GET /api/commands HTTP/1.1" 200 -
+23:25:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:25:17] "GET /api/commands HTTP/1.1" 200 -
+23:26:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:26:17] "GET /api/commands HTTP/1.1" 200 -
+23:27:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:27:17] "GET /api/commands HTTP/1.1" 200 -
+23:28:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:28:17] "GET /api/commands HTTP/1.1" 200 -
+23:29:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:29:17] "GET /api/commands HTTP/1.1" 200 -
+23:30:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:30:17] "GET /api/commands HTTP/1.1" 200 -
+23:31:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:31:17] "GET /api/commands HTTP/1.1" 200 -
+23:32:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:32:17] "GET /api/commands HTTP/1.1" 200 -
+23:33:17  INFO      werkzeug — 127.0.0.1 - - [14/Apr/2026 23:33:17] "GET /api/commands HTTP/1.1" 200 -
+15:36:39  INFO      __main__ — SSH Honeypot starting...
+15:36:39  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+15:36:39  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+15:37:23  INFO      __main__ — SSH Honeypot starting...
+15:37:23  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+15:37:23  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+15:40:20  INFO      __main__ — SSH Honeypot starting...
+15:40:20  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+15:40:20  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+15:40:20  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+15:40:20  INFO      __main__ — SSH server started on port 2222
+15:40:20  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+15:40:20  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+15:40:20  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:8080
+15:51:37  INFO      __main__ — SSH Honeypot starting...
+15:51:37  INFO      __main__ — Database: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/honeypot.db
+15:51:37  INFO      __main__ — Event log: /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/events.jsonl
+15:51:37  INFO      honeypot.server — Loading host key from /home/andres/Documents/VScode-Projects/SSH-Honeypot/data/server.key
+15:51:37  INFO      __main__ — SSH server started on port 2222
+15:51:37  INFO      honeypot.server — SSH honeypot listening on 0.0.0.0:2222 (max 50 concurrent sessions)
+15:51:37  INFO      honeypot.server — Banner: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+15:51:37  INFO      dashboard.app — Dashboard starting at http://127.0.0.1:8080
+15:51:37  INFO      werkzeug — [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+15:51:37  INFO      werkzeug — [33mPress CTRL+C to quit[0m
+15:51:45  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:51:45] "GET / HTTP/1.1" 200 -
+15:51:45  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:51:45] "GET /api/commands HTTP/1.1" 200 -
+15:51:45  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:51:45] "GET /api/attempts?limit=500 HTTP/1.1" 200 -
+15:51:45  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:51:45] "GET /api/stream HTTP/1.1" 200 -
+15:51:45  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:51:45] "GET /api/stats HTTP/1.1" 200 -
+15:51:46  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:51:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+15:51:55  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:51:55] "GET /api/commands HTTP/1.1" 200 -
+15:52:05  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:52:05] "GET /api/commands HTTP/1.1" 200 -
+15:52:15  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:52:15] "GET /api/commands HTTP/1.1" 200 -
+15:52:25  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:52:25] "GET /api/commands HTTP/1.1" 200 -
+15:52:35  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:52:35] "GET /api/commands HTTP/1.1" 200 -
+15:52:45  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:52:45] "GET /api/commands HTTP/1.1" 200 -
+15:52:55  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:52:55] "GET /api/commands HTTP/1.1" 200 -
+15:53:05  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:53:05] "GET /api/commands HTTP/1.1" 200 -
+15:53:15  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:53:15] "GET /api/commands HTTP/1.1" 200 -
+15:53:25  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:53:25] "GET /api/commands HTTP/1.1" 200 -
+15:53:35  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:53:35] "GET /api/commands HTTP/1.1" 200 -
+15:53:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:53:58] "GET /api/commands HTTP/1.1" 200 -
+15:54:00  INFO      honeypot.session — SESSION_START  127.0.0.1:50790  id=3f521f20
+15:54:10  INFO      honeypot.attempt — ATTEMPT  127.0.0.1  user=root              pass=andy_2340             [Private Network, Local]
+15:54:14  INFO      honeypot.command — COMMAND  127.0.0.1  $ ls
+15:54:44  INFO      honeypot.session — SESSION_END  127.0.0.1  id=3f521f20  duration=43.8s
+15:54:49  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:54:49] "GET /api/commands HTTP/1.1" 200 -
+15:54:55  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:54:55] "GET /api/commands HTTP/1.1" 200 -
+15:55:05  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:55:05] "GET /api/commands HTTP/1.1" 200 -
+15:55:15  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:55:15] "GET /api/commands HTTP/1.1" 200 -
+15:55:25  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:55:25] "GET /api/commands HTTP/1.1" 200 -
+15:55:35  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:55:35] "GET /api/commands HTTP/1.1" 200 -
+15:55:45  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:55:45] "GET /api/commands HTTP/1.1" 200 -
+15:55:55  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:55:55] "GET /api/commands HTTP/1.1" 200 -
+15:56:05  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:56:05] "GET /api/commands HTTP/1.1" 200 -
+15:56:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:56:58] "GET /api/commands HTTP/1.1" 200 -
+15:57:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:57:58] "GET /api/commands HTTP/1.1" 200 -
+15:58:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:58:58] "GET /api/commands HTTP/1.1" 200 -
+15:59:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 15:59:58] "GET /api/commands HTTP/1.1" 200 -
+16:00:40  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:00:40] "GET /api/commands HTTP/1.1" 200 -
+16:00:45  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:00:45] "GET /api/commands HTTP/1.1" 200 -
+16:00:55  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:00:55] "GET /api/commands HTTP/1.1" 200 -
+16:01:05  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:01:05] "GET /api/commands HTTP/1.1" 200 -
+16:01:15  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:01:15] "GET /api/commands HTTP/1.1" 200 -
+16:01:25  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:01:25] "GET /api/commands HTTP/1.1" 200 -
+16:01:35  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:01:35] "GET /api/commands HTTP/1.1" 200 -
+16:01:45  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:01:45] "GET /api/commands HTTP/1.1" 200 -
+16:01:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:01:58] "GET /api/commands HTTP/1.1" 200 -
+16:02:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:02:58] "GET /api/commands HTTP/1.1" 200 -
+16:03:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:03:58] "GET /api/commands HTTP/1.1" 200 -
+16:04:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:04:58] "GET /api/commands HTTP/1.1" 200 -
+16:05:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:05:58] "GET /api/commands HTTP/1.1" 200 -
+16:06:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:06:58] "GET /api/commands HTTP/1.1" 200 -
+16:07:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:07:58] "GET /api/commands HTTP/1.1" 200 -
+16:08:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:08:58] "GET /api/commands HTTP/1.1" 200 -
+16:09:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:09:58] "GET /api/commands HTTP/1.1" 200 -
+16:10:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:10:58] "GET /api/commands HTTP/1.1" 200 -
+16:11:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:11:58] "GET /api/commands HTTP/1.1" 200 -
+16:12:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:12:58] "GET /api/commands HTTP/1.1" 200 -
+16:13:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:13:58] "GET /api/commands HTTP/1.1" 200 -
+16:14:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:14:58] "GET /api/commands HTTP/1.1" 200 -
+16:15:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:15:58] "GET /api/commands HTTP/1.1" 200 -
+16:16:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:16:58] "GET /api/commands HTTP/1.1" 200 -
+16:17:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:17:58] "GET /api/commands HTTP/1.1" 200 -
+16:18:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:18:58] "GET /api/commands HTTP/1.1" 200 -
+16:19:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:19:58] "GET /api/commands HTTP/1.1" 200 -
+16:20:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:20:58] "GET /api/commands HTTP/1.1" 200 -
+16:21:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:21:58] "GET /api/commands HTTP/1.1" 200 -
+16:22:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:22:58] "GET /api/commands HTTP/1.1" 200 -
+16:23:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:23:58] "GET /api/commands HTTP/1.1" 200 -
+16:24:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:24:58] "GET /api/commands HTTP/1.1" 200 -
+16:25:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:25:58] "GET /api/commands HTTP/1.1" 200 -
+16:26:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:26:58] "GET /api/commands HTTP/1.1" 200 -
+16:27:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:27:58] "GET /api/commands HTTP/1.1" 200 -
+16:28:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:28:58] "GET /api/commands HTTP/1.1" 200 -
+16:29:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:29:58] "GET /api/commands HTTP/1.1" 200 -
+16:30:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:30:58] "GET /api/commands HTTP/1.1" 200 -
+16:31:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:31:58] "GET /api/commands HTTP/1.1" 200 -
+16:32:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:32:58] "GET /api/commands HTTP/1.1" 200 -
+16:33:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:33:58] "GET /api/commands HTTP/1.1" 200 -
+16:34:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:34:58] "GET /api/commands HTTP/1.1" 200 -
+16:35:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:35:58] "GET /api/commands HTTP/1.1" 200 -
+16:36:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:36:58] "GET /api/commands HTTP/1.1" 200 -
+16:37:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:37:58] "GET /api/commands HTTP/1.1" 200 -
+16:38:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:38:58] "GET /api/commands HTTP/1.1" 200 -
+16:39:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:39:58] "GET /api/commands HTTP/1.1" 200 -
+16:40:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:40:58] "GET /api/commands HTTP/1.1" 200 -
+16:41:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:41:58] "GET /api/commands HTTP/1.1" 200 -
+16:42:58  INFO      werkzeug — 127.0.0.1 - - [01/Sep/2026 16:42:58] "GET /api/commands HTTP/1.1" 200 -

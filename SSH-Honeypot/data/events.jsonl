@@ -1,0 +1,86 @@
+{"type": "session_start", "timestamp": "2026-04-14T21:28:29.081586+00:00Z", "session_id": "e18901c2", "ip": "127.0.0.1", "port": 46612}
+{"type": "attempt", "timestamp": "2026-04-14T21:28:36.242859+00:00Z", "session_id": "e18901c2", "ip": "127.0.0.1", "port": 46612, "username": "root", "password": "and_2120", "geo": {"country": "Private Network", "countryCode": "XX", "city": "Local", "lat": 0.0, "lon": 0.0, "isp": "Private"}}
+{"type": "command", "timestamp": "2026-04-14T21:28:40.399593+00:00Z", "session_id": "e18901c2", "ip": "127.0.0.1", "command": "pwd"}
+{"type": "command", "timestamp": "2026-04-14T21:28:41.447082+00:00Z", "session_id": "e18901c2", "ip": "127.0.0.1", "command": "ls"}
+{"type": "command", "timestamp": "2026-04-14T21:29:12.693860+00:00Z", "session_id": "e18901c2", "ip": "127.0.0.1", "command": "whoami"}
+{"type": "command", "timestamp": "2026-04-14T21:29:17.021047+00:00Z", "session_id": "e18901c2", "ip": "127.0.0.1", "command": "ls"}
+{"type": "command", "timestamp": "2026-04-14T21:29:18.265013+00:00Z", "session_id": "e18901c2", "ip": "127.0.0.1", "command": "ll"}
+{"type": "session_end", "timestamp": "2026-04-14T21:29:48.270426+00:00Z", "session_id": "e18901c2", "ip": "127.0.0.1", "duration_s": 79.19}
+{"type": "session_start", "timestamp": "2026-04-14T22:37:28.275034+00:00Z", "session_id": "969d8552", "ip": "127.0.0.1", "port": 40346}
+{"type": "attempt", "timestamp": "2026-04-14T22:37:30.854952+00:00Z", "session_id": "969d8552", "ip": "127.0.0.1", "port": 40346, "username": "root", "password": "", "geo": {"country": "Private Network", "countryCode": "XX", "city": "Local", "lat": 0.0, "lon": 0.0, "isp": "Private"}}
+{"type": "command", "timestamp": "2026-04-14T22:37:35.166753+00:00Z", "session_id": "969d8552", "ip": "127.0.0.1", "command": "ls"}
+{"type": "command", "timestamp": "2026-04-14T22:37:40.356839+00:00Z", "session_id": "969d8552", "ip": "127.0.0.1", "command": "cd b\t\u007f\u007f\u007f\u007f"}
+{"type": "command", "timestamp": "2026-04-14T22:37:44.404739+00:00Z", "session_id": "969d8552", "ip": "127.0.0.1", "command": "cd bin/"}
+{"type": "command", "timestamp": "2026-04-14T22:37:50.139562+00:00Z", "session_id": "969d8552", "ip": "127.0.0.1", "command": "\u001b[C\u001b[C\u001b[C\u001b[C\u007f\u007f\u007f\u007f\u007f\u007f\u007fls"}
+{"type": "command", "timestamp": "2026-04-14T22:37:51.237471+00:00Z", "session_id": "969d8552", "ip": "127.0.0.1", "command": "pwd"}
+{"type": "command", "timestamp": "2026-04-14T22:37:55.785040+00:00Z", "session_id": "969d8552", "ip": "127.0.0.1", "command": "mypassword"}
+{"type": "session_end", "timestamp": "2026-04-14T22:38:25.789213+00:00Z", "session_id": "969d8552", "ip": "127.0.0.1", "duration_s": 57.51}
+{"type": "session_start", "timestamp": "2026-04-14T22:56:29.309860+00:00Z", "session_id": "077447cf", "ip": "127.0.0.1", "port": 45170}
+{"type": "attempt", "timestamp": "2026-04-14T22:56:32.791916+00:00Z", "session_id": "077447cf", "ip": "127.0.0.1", "port": 45170, "username": "root", "password": "and_2120", "geo": {"country": "Private Network", "countryCode": "XX", "city": "Local", "lat": 0.0, "lon": 0.0, "isp": "Private"}}
+{"type": "command", "timestamp": "2026-04-14T22:56:36.862151+00:00Z", "session_id": "077447cf", "ip": "127.0.0.1", "command": "ls"}
+{"type": "command", "timestamp": "2026-04-14T22:56:43.517889+00:00Z", "session_id": "077447cf", "ip": "127.0.0.1", "command": "cd /home"}
+{"type": "command", "timestamp": "2026-04-14T22:56:48.212477+00:00Z", "session_id": "077447cf", "ip": "127.0.0.1", "command": "\u001b[3~\u001b[3~\u001b[C\u001b[C\u001b[C\u001b[C"}
+{"type": "command", "timestamp": "2026-04-14T22:56:51.368721+00:00Z", "session_id": "077447cf", "ip": "127.0.0.1", "command": "pwd"}
+{"type": "command", "timestamp": "2026-04-14T22:56:52.384526+00:00Z", "session_id": "077447cf", "ip": "127.0.0.1", "command": "ls"}
+{"type": "session_start", "timestamp": "2026-04-14T22:59:05.775660+00:00Z", "session_id": "db024e87", "ip": "127.0.0.1", "port": 46210}
+{"type": "attempt", "timestamp": "2026-04-14T22:59:11.980957+00:00Z", "session_id": "db024e87", "ip": "127.0.0.1", "port": 46210, "username": "root", "password": "and_2120", "geo": {"country": "Private Network", "countryCode": "XX", "city": "Local", "lat": 0.0, "lon": 0.0, "isp": "Private"}}
+{"type": "session_end", "timestamp": "2026-04-14T22:59:41.985387+00:00Z", "session_id": "db024e87", "ip": "127.0.0.1", "duration_s": 36.21}
+{"type": "session_start", "timestamp": "2026-04-15T00:02:54.486175+00:00Z", "session_id": "3caf35f8", "ip": "127.0.0.1", "port": 48160}
+{"type": "attempt", "timestamp": "2026-04-15T00:02:57.484086+00:00Z", "session_id": "3caf35f8", "ip": "127.0.0.1", "port": 48160, "username": "root", "password": "and_2120", "geo": {"country": "Private Network", "countryCode": "XX", "city": "Local", "lat": 0.0, "lon": 0.0, "isp": "Private"}}
+{"type": "command", "timestamp": "2026-04-15T00:03:01.361467+00:00Z", "session_id": "3caf35f8", "ip": "127.0.0.1", "command": "lol"}
+{"type": "command", "timestamp": "2026-04-15T00:03:03.451840+00:00Z", "session_id": "3caf35f8", "ip": "127.0.0.1", "command": "cd"}
+{"type": "command", "timestamp": "2026-04-15T00:03:10.523109+00:00Z", "session_id": "3caf35f8", "ip": "127.0.0.1", "command": "\u001b[C\u001b[C\u007f\u007f\u007fp\u007f\u007f\u007fp\u007fwd"}
+{"type": "command", "timestamp": "2026-04-15T00:03:12.085132+00:00Z", "session_id": "3caf35f8", "ip": "127.0.0.1", "command": "pwd"}
+{"type": "command", "timestamp": "2026-04-15T00:03:20.218842+00:00Z", "session_id": "3caf35f8", "ip": "127.0.0.1", "command": "chmod +x\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f"}
+{"type": "command", "timestamp": "2026-04-15T00:03:53.262895+00:00Z", "session_id": "3caf35f8", "ip": "127.0.0.1", "command": "\u0003\u0003\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u007f\u007f\u007f"}
+{"type": "command", "timestamp": "2026-04-15T00:04:03.040127+00:00Z", "session_id": "3caf35f8", "ip": "127.0.0.1", "command": "touch passwords.txt"}
+{"type": "session_start", "timestamp": "2026-04-15T00:04:23.822053+00:00Z", "session_id": "1b27693f", "ip": "127.0.0.1", "port": 57326}
+{"type": "attempt", "timestamp": "2026-04-15T00:04:26.595487+00:00Z", "session_id": "1b27693f", "ip": "127.0.0.1", "port": 57326, "username": "root", "password": "and_2120", "geo": {"country": "Private Network", "countryCode": "XX", "city": "Local", "lat": 0.0, "lon": 0.0, "isp": "Private"}}
+{"type": "command", "timestamp": "2026-04-15T00:04:32.898353+00:00Z", "session_id": "1b27693f", "ip": "127.0.0.1", "command": "pwd"}
+{"type": "command", "timestamp": "2026-04-15T00:04:34.865076+00:00Z", "session_id": "1b27693f", "ip": "127.0.0.1", "command": "ls"}
+{"type": "session_end", "timestamp": "2026-04-15T00:04:35.064304+00:00Z", "session_id": "3caf35f8", "ip": "127.0.0.1", "duration_s": 100.58}
+{"type": "command", "timestamp": "2026-04-15T00:04:39.821508+00:00Z", "session_id": "1b27693f", "ip": "127.0.0.1", "command": "cd bing\t\u007f\u007f\u007f"}
+{"type": "command", "timestamp": "2026-04-15T00:04:41.825605+00:00Z", "session_id": "1b27693f", "ip": "127.0.0.1", "command": "cd bin"}
+{"type": "command", "timestamp": "2026-04-15T00:04:46.111638+00:00Z", "session_id": "1b27693f", "ip": "127.0.0.1", "command": "\u001b[C\u001b[C\u007f\u001b[3~\u001b[3~"}
+{"type": "command", "timestamp": "2026-04-15T00:04:51.999495+00:00Z", "session_id": "1b27693f", "ip": "127.0.0.1", "command": "pwd"}
+{"type": "command", "timestamp": "2026-04-15T00:04:53.889230+00:00Z", "session_id": "1b27693f", "ip": "127.0.0.1", "command": "ls"}
+{"type": "session_end", "timestamp": "2026-04-15T00:05:23.893531+00:00Z", "session_id": "1b27693f", "ip": "127.0.0.1", "duration_s": 60.07}
+{"type": "session_start", "timestamp": "2026-04-15T00:09:52.750381+00:00Z", "session_id": "c1194319", "ip": "127.0.0.1", "port": 58476}
+{"type": "attempt", "timestamp": "2026-04-15T00:09:55.603919+00:00Z", "session_id": "c1194319", "ip": "127.0.0.1", "port": 58476, "username": "root", "password": "andy", "geo": {"country": "Private Network", "countryCode": "XX", "city": "Local", "lat": 0.0, "lon": 0.0, "isp": "Private"}}
+{"type": "command", "timestamp": "2026-04-15T00:10:03.264214+00:00Z", "session_id": "c1194319", "ip": "127.0.0.1", "command": "ls"}
+{"type": "command", "timestamp": "2026-04-15T00:10:07.228592+00:00Z", "session_id": "c1194319", "ip": "127.0.0.1", "command": "cd bin/"}
+{"type": "command", "timestamp": "2026-04-15T00:10:18.791208+00:00Z", "session_id": "c1194319", "ip": "127.0.0.1", "command": "\u001b[C\u001b[C\u001b[C\u007f\u007f\u001b[3~\u001b[3~\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u001b[C\u001b[C\u007f\u007f\u007fld\u007f\u007f\u007f\u001b[5~\u007f"}
+{"type": "command", "timestamp": "2026-04-15T00:10:29.954541+00:00Z", "session_id": "c1194319", "ip": "127.0.0.1", "command": "c"}
+{"type": "session_end", "timestamp": "2026-04-15T00:11:02.157894+00:00Z", "session_id": "c1194319", "ip": "127.0.0.1", "duration_s": 69.41}
+{"type": "session_start", "timestamp": "2026-04-15T00:11:02.165123+00:00Z", "session_id": "7c208059", "ip": "127.0.0.1", "port": 47684}
+{"type": "attempt", "timestamp": "2026-04-15T00:11:04.779429+00:00Z", "session_id": "7c208059", "ip": "127.0.0.1", "port": 47684, "username": "root", "password": "", "geo": {"country": "Private Network", "countryCode": "XX", "city": "Local", "lat": 0.0, "lon": 0.0, "isp": "Private"}}
+{"type": "command", "timestamp": "2026-04-15T00:11:07.654391+00:00Z", "session_id": "7c208059", "ip": "127.0.0.1", "command": "pwd"}
+{"type": "command", "timestamp": "2026-04-15T00:11:09.981578+00:00Z", "session_id": "7c208059", "ip": "127.0.0.1", "command": "ls"}
+{"type": "command", "timestamp": "2026-04-15T00:11:13.412228+00:00Z", "session_id": "7c208059", "ip": "127.0.0.1", "command": "cd bin/"}
+{"type": "session_end", "timestamp": "2026-04-15T00:11:47.420501+00:00Z", "session_id": "7c208059", "ip": "127.0.0.1", "duration_s": 45.26}
+{"type": "session_start", "timestamp": "2026-04-15T00:14:55.660521+00:00Z", "session_id": "3e848342", "ip": "127.0.0.1", "port": 42088}
+{"type": "attempt", "timestamp": "2026-04-15T00:14:57.892234+00:00Z", "session_id": "3e848342", "ip": "127.0.0.1", "port": 42088, "username": "root", "password": "andy", "geo": {"country": "Private Network", "countryCode": "XX", "city": "Local", "lat": 0.0, "lon": 0.0, "isp": "Private"}}
+{"type": "command", "timestamp": "2026-04-15T00:15:01.398966+00:00Z", "session_id": "3e848342", "ip": "127.0.0.1", "command": "pwd"}
+{"type": "command", "timestamp": "2026-04-15T00:15:03.205802+00:00Z", "session_id": "3e848342", "ip": "127.0.0.1", "command": "ls"}
+{"type": "command", "timestamp": "2026-04-15T00:15:06.117651+00:00Z", "session_id": "3e848342", "ip": "127.0.0.1", "command": "cd bin/"}
+{"type": "command", "timestamp": "2026-04-15T00:15:08.768464+00:00Z", "session_id": "3e848342", "ip": "127.0.0.1", "command": "\u001b[3~\u001b[3~\u001b[3~\u001b[3~"}
+{"type": "session_end", "timestamp": "2026-04-15T00:15:46.250995+00:00Z", "session_id": "3e848342", "ip": "127.0.0.1", "duration_s": 50.59}
+{"type": "session_start", "timestamp": "2026-04-15T00:16:20.304207+00:00Z", "session_id": "f7df021a", "ip": "127.0.0.1", "port": 56276}
+{"type": "attempt", "timestamp": "2026-04-15T00:16:21.627473+00:00Z", "session_id": "f7df021a", "ip": "127.0.0.1", "port": 56276, "username": "root", "password": "", "geo": {"country": "Private Network", "countryCode": "XX", "city": "Local", "lat": 0.0, "lon": 0.0, "isp": "Private"}}
+{"type": "command", "timestamp": "2026-04-15T00:16:25.553434+00:00Z", "session_id": "f7df021a", "ip": "127.0.0.1", "command": "ls"}
+{"type": "command", "timestamp": "2026-04-15T00:16:33.952823+00:00Z", "session_id": "f7df021a", "ip": "127.0.0.1", "command": "cd dev\t\u007f"}
+{"type": "command", "timestamp": "2026-04-15T00:16:40.693035+00:00Z", "session_id": "f7df021a", "ip": "127.0.0.1", "command": "\u001b[C\u001b[C\u001b[C\u001b[C\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u001b[D\u001b[D\u001b[C\u007f\u007f\u007f/"}
+{"type": "session_end", "timestamp": "2026-04-15T00:17:10.697145+00:00Z", "session_id": "f7df021a", "ip": "127.0.0.1", "duration_s": 50.39}
+{"type": "session_start", "timestamp": "2026-04-15T00:21:47.736591+00:00Z", "session_id": "606000e8", "ip": "127.0.0.1", "port": 56362}
+{"type": "attempt", "timestamp": "2026-04-15T00:21:49.723007+00:00Z", "session_id": "606000e8", "ip": "127.0.0.1", "port": 56362, "username": "root", "password": "", "geo": {"country": "Private Network", "countryCode": "XX", "city": "Local", "lat": 0.0, "lon": 0.0, "isp": "Private"}}
+{"type": "command", "timestamp": "2026-04-15T00:21:52.671204+00:00Z", "session_id": "606000e8", "ip": "127.0.0.1", "command": "pwd"}
+{"type": "command", "timestamp": "2026-04-15T00:21:54.017247+00:00Z", "session_id": "606000e8", "ip": "127.0.0.1", "command": "ls"}
+{"type": "command", "timestamp": "2026-04-15T00:21:58.118775+00:00Z", "session_id": "606000e8", "ip": "127.0.0.1", "command": "cd bin/"}
+{"type": "command", "timestamp": "2026-04-15T00:22:02.157720+00:00Z", "session_id": "606000e8", "ip": "127.0.0.1", "command": "pwd"}
+{"type": "command", "timestamp": "2026-04-15T00:22:13.993239+00:00Z", "session_id": "606000e8", "ip": "127.0.0.1", "command": "touch cluster_binary.bin"}
+{"type": "command", "timestamp": "2026-04-15T00:22:16.471067+00:00Z", "session_id": "606000e8", "ip": "127.0.0.1", "command": "ls"}
+{"type": "session_end", "timestamp": "2026-04-15T00:22:46.475282+00:00Z", "session_id": "606000e8", "ip": "127.0.0.1", "duration_s": 58.74}
+{"type": "session_start", "timestamp": "2026-09-01T21:54:00.965900+00:00Z", "session_id": "3f521f20", "ip": "127.0.0.1", "port": 50790}
+{"type": "attempt", "timestamp": "2026-09-01T21:54:10.982077+00:00Z", "session_id": "3f521f20", "ip": "127.0.0.1", "port": 50790, "username": "root", "password": "andy_2340", "geo": {"country": "Private Network", "countryCode": "XX", "city": "Local", "lat": 0.0, "lon": 0.0, "isp": "Private"}}
+{"type": "command", "timestamp": "2026-09-01T21:54:14.771009+00:00Z", "session_id": "3f521f20", "ip": "127.0.0.1", "command": "ls"}
+{"type": "session_end", "timestamp": "2026-09-01T21:54:44.775310+00:00Z", "session_id": "3f521f20", "ip": "127.0.0.1", "duration_s": 43.81}

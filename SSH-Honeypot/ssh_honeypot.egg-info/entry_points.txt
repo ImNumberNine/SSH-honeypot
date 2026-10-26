@@ -1,0 +1,2 @@
+[console_scripts]
+ssh-honeypot = main:main
